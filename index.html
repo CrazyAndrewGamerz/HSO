@@ -1,15 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOUT | HSO - GEOCRAFT</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>⚠️ Server Down</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background: radial-gradient(circle, #222 0%, #000 100%);
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-bottom: 0.2em;
+      color: #ff3333;
+      text-shadow: 0 0 20px #ff3333;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #ccc;
+      max-width: 600px;
+      margin: 0 auto 2em;
+    }
+
+    .code {
+      background-color: #222;
+      border: 1px solid #444;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      color: #ff3333;
+      text-shadow: 0 0 5px #ff3333;
+    }
+
+    .glow {
+      color: #ff3333;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { text-shadow: 0 0 5px #ff3333; }
+      50% { text-shadow: 0 0 20px #ff3333; }
+      100% { text-shadow: 0 0 5px #ff3333; }
+    }
+  </style>
 </head>
 <body>
-  <h1>We will be right back!</h1>
-    <h2>Er is momenteel een storing Wij proberen zo snel mogelijk weer terug te zijn</h2>
-    <h3>De oorzaak is nog niet bekend</h3>
+
+  <h1 class="glow">503 Error</h1>
+  <p class="glow">Web Server is Down</p>
+  <div class="code">De server reageert niet op verzoeken.<br>Probeer het later opnieuw.</div>
 
 </body>
 </html>
